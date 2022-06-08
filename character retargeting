@@ -1,7 +1,14 @@
-Motion Retargetting based on Dilated Convolutions and Skeleton-specific Loss Functions
+character retargeting
+1.Motion Retargetting based on Dilated Convolutions and Skeleton-specific Loss Functions
 代码 ：https://github.com/medialab-ku/retargetting-tdcn
 主页：https://sites.google.com/view/retargetting-tdcn
 
+character interactivate retargeting
+1.scence-character interactive
+(1)4D Human Body Capture from Egocentric Video via 3D Scene Grounding 
+主页：https://aptx4869lm.github.io/4DEgocentricBodyCapture/
+代码：https://github.com/aptx4869lm/4DCapture-FPV
+论文：https://arxiv.org/pdf/2011.13341.pdf
 
 
 人与人交互
