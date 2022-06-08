@@ -1,3 +1,11 @@
 Motion Retargetting based on Dilated Convolutions and Skeleton-specific Loss Functions
 代码 ：https://github.com/medialab-ku/retargetting-tdcn
 主页：https://sites.google.com/view/retargetting-tdcn
+
+
+
+人与人交互
+实现方式：
+1.在平台上实现IK交互重定位
+2.用IK方法迭代实现碰撞交互重定位
+3.基于交互空间、大数据交互重定位
