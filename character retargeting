@@ -1,29 +1,37 @@
 character retargeting
-1.Motion Retargetting based on Dilated Convolutions and Skeleton-specific Loss Functions
-代码 ：https://github.com/medialab-ku/retargetting-tdcn
-主页：https://sites.google.com/view/retargetting-tdcn
+ 1.Motion Retargetting based on Dilated Convolutions and Skeleton-specific Loss Functions
+ 代码 ：https://github.com/medialab-ku/retargetting-tdcn
+ 主页：https://sites.google.com/view/retargetting-tdcn
 
 character interactivate retargeting
-1.scence-character interactive
-(1)4D Human Body Capture from Egocentric Video via 3D Scene Grounding 
-主页：https://aptx4869lm.github.io/4DEgocentricBodyCapture/
-代码：https://github.com/aptx4869lm/4DCapture-FPV
-论文：https://arxiv.org/pdf/2011.13341.pdf
+ 1.scence-character interactive
+ (1)4D Human Body Capture from Egocentric Video via 3D Scene Grounding 
+ 主页：https://aptx4869lm.github.io/4DEgocentricBodyCapture/
+ 代码：https://github.com/aptx4869lm/4DCapture-FPV
+ 论文：https://arxiv.org/pdf/2011.13341.pdf
 
-2.IK retarget
-(1)CCDIK（循环坐标下降逆动态学）
- 思路:
-    1.骨骼间的结构为子父层次链接（父节点的变换会影响子节点的）
-    2.每个骨骼都以【自身轴点到尾叶子节点的方向】旋转到【自身轴点到目标点方向】，开始趋近
-    3.最终效果与迭代次数成正比
- 局限：
-    它设计用于处理串行链骨骼，因此，很难扩展到多个末端执行器的问题
-(2)FABRIK
-思路：这种方法不是使用角度旋转，而是将查找关节位置。把角度变为直线上查找点的问题。以向前迭代和向后的迭代模式更新。
+ 2.人与人交互
+   实现方式：
+   1.在平台上实现IK交互重定位
+   2.用IK方法迭代实现碰撞交互重定位
+   3.基于交互空间、大数据交互重定位
+   IK retarget
+   (1)CCDIK（循环坐标下降逆动态学）
+    思路:
+       1.骨骼间的结构为子父层次链接（父节点的变换会影响子节点的）
+       2.每个骨骼都以【自身轴点到尾叶子节点的方向】旋转到【自身轴点到目标点方向】，开始趋近
+       3.最终效果与迭代次数成正比
+    局限：
+       它设计用于处理串行链骨骼，因此，很难扩展到多个末端执行器的问题
+   (2)FABRIK
+   思路：这种方法不是使用角度旋转，而是将查找关节位置。把角度变为直线上查找点的问题。以向前迭代和向后的迭代模式更新。
+ 
+ 3.自交互
+ 目前最好效果：
+ COAP: Compositional Articulated Occupancy of People
+ 主页：https://neuralbodies.github.io/COAP/
+
+   
 
 
-人与人交互
-实现方式：
-1.在平台上实现IK交互重定位
-2.用IK方法迭代实现碰撞交互重定位
-3.基于交互空间、大数据交互重定位
+
